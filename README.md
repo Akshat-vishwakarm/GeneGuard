@@ -1,113 +1,124 @@
-🧬 GeneGuard
-AI-Powered Genetic Risk Assessment & Preventive Health Platform
+<div align="center">
 
-GeneGuard is an AI-integrated healthcare web application designed to help users understand their potential genetic and lifestyle-related health risks. The platform allows users to build a personal health profile, analyze family medical history, evaluate lifestyle factors, and receive personalized preventive health recommendations.
+# 🧬 GeneGuard
 
-🚀 Features
-🧬 Genetic Risk Assessment — Analyze potential risks associated with family medical history.
-👨‍👩‍👧 Family Health Tree — Record and visualize family medical history.
-📊 Risk Analysis Dashboard — Present health-risk information in an easy-to-understand format.
-🤖 AI-Powered Recommendations — Generate personalized preventive-health suggestions.
-🏥 Health Passport — Maintain a centralized overview of important health information.
-👨‍⚕️ Doctor View — Provide a simplified health overview for medical discussions.
-⚙️ Profile Management — Store lifestyle, medical, and personal health information.
-♿ Accessibility — Includes features such as Color Blind Mode.
-📱 Responsive Interface — Designed for desktop and mobile-friendly usage.
-🛠️ Tech Stack
-Frontend
-React
-TypeScript
-Vite
-Tailwind CSS
-Wouter
-React Query
-Recharts
-Framer Motion
-Backend
-Node.js
-Express.js
-TypeScript
-REST API
-Database & ORM
-Drizzle ORM
-PostgreSQL / Neon compatible architecture
-AI
-Google Gemini API
-🏗️ Project Structure
-GeneGuard/
-│
-├── api/                 # Vercel serverless API
-├── client/              # React frontend
-│   └── src/
-│
-├── server/              # Express backend
-│   ├── routes.ts
-│   ├── storage.ts
-│   ├── index.ts
-│   └── vite.ts
-│
-├── shared/              # Shared schemas and types
-├── attached_assets/     # Project assets
-├── package.json
-├── vite.config.ts
-├── drizzle.config.ts
-└── vercel.json
-🔄 Application Flow
-User
-  ↓
-Create Health Profile
-  ↓
-Add Medical & Family History
-  ↓
-Lifestyle Assessment
-  ↓
-AI / Risk Analysis
-  ↓
-Personalized Recommendations
-  ↓
-Health Passport
-  ↓
-Preventive Health Actions
-💻 Getting Started
-1. Clone the repository
-git clone https://github.com/Akshat-vishwakarm/GeneGuard.git
-cd GeneGuard
-2. Install dependencies
-npm install
-3. Start development server
-npm run dev
-4. Build for production
-npm run build
-🔐 Environment Variables
+### AI-Powered Genetic Risk Assessment & Preventive Health Platform
 
-Create a .env file and add the required API credentials:
+**Understand your health risks. Discover patterns. Take preventive action.**
 
-GEMINI_API_KEY=your_gemini_api_key
-DATABASE_URL=your_database_url
+[![Live Demo](https://img.shields.io/badge/🚀_Live_Demo-GeneGuard-00C896?style=for-the-badge)](https://gene-guard-zzzp.vercel.app/)
+[![GitHub](https://img.shields.io/badge/GitHub-Repository-181717?style=for-the-badge&logo=github)](https://github.com/Akshat-vishwakarm/GeneGuard)
+[![React](https://img.shields.io/badge/React-18-61DAFB?style=for-the-badge&logo=react&logoColor=black)](https://react.dev/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5.6-3178C6?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+[![Vite](https://img.shields.io/badge/Vite-5-646CFF?style=for-the-badge&logo=vite&logoColor=white)](https://vitejs.dev/)
 
-Never commit .env files, passwords, API keys, or personal account credentials to GitHub.
+</div>
 
-🌐 Deployment
+---
 
-GeneGuard is designed to be deployable using Vercel, with the React frontend served as a production build and the Express backend exposed through a serverless API function.
+## 🌟 About GeneGuard
 
-🎯 Purpose
+**GeneGuard** is an AI-integrated preventive healthcare platform that helps users understand potential health risks by combining:
 
-GeneGuard aims to make preventive healthcare more accessible by combining:
+> 🧬 **Family Medical History** + 🧑‍⚕️ **Health Profile** + 🏃 **Lifestyle Factors** + 🤖 **AI Analysis**
 
-Family Medical History + Lifestyle Information + AI + Risk Analysis
+Instead of simply storing health information, GeneGuard transforms it into an understandable health-risk overview and personalized preventive recommendations.
 
-into one easy-to-use platform.
+---
 
-⚠️ Disclaimer: GeneGuard is an educational and preventive-health project. It does not provide medical diagnosis or replace professional medical advice.
+## ✨ What Can GeneGuard Do?
 
-🔮 Future Improvements
-Persistent PostgreSQL database
-More advanced genetic-risk models
-Secure user authentication
-Medical-report/document analysis
-Improved AI health recommendations
-Doctor-patient sharing
-Long-term health trend tracking
-Automated health reminders
-More comprehensive risk prediction models
+<table>
+<tr>
+<td width="50%">
+
+### 🧬 Genetic Risk Assessment
+
+Analyze family medical history and identify potential inherited health-risk patterns.
+
+</td>
+<td width="50%">
+
+### 👨‍👩‍👧 Family Health Tree
+
+Build a structured family health history to understand patterns across generations.
+
+</td>
+</tr>
+
+<tr>
+<td>
+
+### 📊 Risk Analysis
+
+Convert health and lifestyle information into an easy-to-understand risk overview.
+
+</td>
+<td>
+
+### 🤖 AI Recommendations
+
+Generate personalized preventive-health suggestions based on the user's information.
+
+</td>
+</tr>
+
+<tr>
+<td>
+
+### 🏥 Health Passport
+
+Keep important health information organized in one centralized place.
+
+</td>
+<td>
+
+### 👨‍⚕️ Doctor View
+
+Provide a simplified health overview that can support conversations with healthcare professionals.
+
+</td>
+</tr>
+</table>
+
+---
+
+## 🧠 How It Works
+
+```text
+                ┌───────────────────┐
+                │    👤 User        │
+                └─────────┬─────────┘
+                          │
+                          ▼
+                ┌───────────────────┐
+                │  📝 Health Profile │
+                └─────────┬─────────┘
+                          │
+              ┌───────────┴───────────┐
+              ▼                       ▼
+     ┌─────────────────┐     ┌─────────────────┐
+     │ 👨‍👩‍👧 Family     │     │ 🏃 Lifestyle     │
+     │ Medical History │     │ Information     │
+     └────────┬────────┘     └────────┬────────┘
+              │                       │
+              └───────────┬───────────┘
+                          ▼
+                ┌───────────────────┐
+                │  📊 Risk Analysis  │
+                └─────────┬─────────┘
+                          │
+                          ▼
+                ┌───────────────────┐
+                │ 🤖 AI Analysis     │
+                └─────────┬─────────┘
+                          │
+                          ▼
+                ┌───────────────────┐
+                │ 💡 Recommendations │
+                └─────────┬─────────┘
+                          │
+                          ▼
+                ┌───────────────────┐
+                │ 🏥 Health Passport │
+                └───────────────────┘
