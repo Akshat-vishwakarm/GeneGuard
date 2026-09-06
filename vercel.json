@@ -1,5 +1,39 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
   "buildCommand": "npm run build",
-  "outputDirectory": "dist/public"
+  "outputDirectory": "dist/public",
+  "rewrites": [
+    {
+      "source": "/api/(.*)",
+      "destination": "/api/index.ts"
+    },
+    {
+      "source": "/profile-setup",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/risk-analysis",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/recommendations",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/health-passport",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/family-tree",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/settings",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/doctor-view",
+      "destination": "/index.html"
+    }
+  ]
 }
